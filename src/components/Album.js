@@ -27,6 +27,7 @@ class Album extends Component {
           </div>
         </section>
         <table id="song-list">
+				<caption> Songs from {this.state.album.title} </caption>
           <colgroup>
             <col id="song-number-column" />
             <col id="song-title-column" />

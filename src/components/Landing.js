@@ -1,11 +1,10 @@
-/*jshint esversion: 6 */
 import React from "react";
 import logo from "./1k5bq0.jpg";
 
 const Landing = () => (
   <section className="landing">
     <h1 className="hero-title">Crank it up to 11!</h1>
-    <img src={logo} alt="Logo" />
+    <img className="App-logo" src={logo} alt="Logo" />
     <section className="selling-points">
       <div className="point">
         <h2 className="point-title">Choose your tunes</h2>
