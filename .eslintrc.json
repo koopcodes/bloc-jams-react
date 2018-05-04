@@ -14,7 +14,7 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["react", "jsx-ally", "import", "jsx-a11y"],
+  "plugins": ["react", "import", ],
   "rules": {
     "indent": ["error", "tab"],
     "linebreak-style": ["error", "unix"],
