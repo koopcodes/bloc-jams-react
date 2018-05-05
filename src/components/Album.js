@@ -13,6 +13,10 @@ class Album extends Component {
     this.state = {
       album: album
     };
+}
+
+formatTime(time) {
+    return time ? `${Math.floor(time / 60)}:${Number(time % 60 / 100).toFixed(2).substr(2,3)}` : '-:--'
   }
 
   render() {
@@ -39,11 +43,17 @@ class Album extends Component {
 							<th>Title</th>
 							<th>Duration</th>
 						</tr>
-						{this.state.album.songs.map((title, index) => (
-							<tr>
-								<td>{ "# " + this.state.album.songs.index } </td>
-								<td><Link to={`/album/${this.state.album.slug}/${this.state.album.songs.audioSrc}`} key={index}>{ "Title " + this.state.album.songs.title }</Link></td>
-								<td>{ "Duration " + this.state.album.songs.duration } </td>
+						{this.state.album.songs.map((song, index) => (
+							<tr className={song} key ={index}>
+								<td className="song-actions">
+                  <button>
+                    <span className="song-number">{index+1 }</span>
+                    <span className="ion-play"></span>
+                    <span className="ion-pause"></span>
+                  </button>
+                </td>
+								<td className="song-title"><Link to={`${song.audioSrc}`}>{ song.title }</Link></td>
+								<td className="song-duration">{ this.formatTime(song.duration) } </td>
 							</tr>
         ))}
 					</tbody>
