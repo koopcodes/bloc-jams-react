@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import albumData from "./../data/albums";
-import { Link } from "react-router-dom";
 import PlayerBar from './PlayerBar';
 
 class Album extends Component {
@@ -16,11 +15,13 @@ class Album extends Component {
 			currentSong: album.songs[0],
 			currentTime: 0,
       duration: album.songs[0].duration,
-      isPlaying: false
+      isPlaying: false,
+			volume: 0.5,
     };
 
 		this.audioElement = document.createElement('audio');
 		this.audioElement.src = album.songs[0].audioSrc;
+		this.audioElement.volume = this.state.volume;
 }
 
 		play() {
@@ -83,15 +84,37 @@ class Album extends Component {
       this.play();
 		}
 
-		formatTime(time) {
-    return time ? `${Math.floor(time / 60)}:${Number(time % 60 / 100).toFixed(2).substr(2,3)}` : '-:--'
-  	}
-
 		handleTimeChange(e) {
      const newTime = this.audioElement.duration * e.target.value;
      this.audioElement.currentTime = newTime;
      this.setState({ currentTime: newTime });
 		}
+
+		handleVolumeChange (e) {
+			const newVolume = e.target.value;
+			this.audioElement.volume = newVolume;
+			this.setState({ volume: newVolume })
+		}
+
+		handleVolumeUpClick (e) {
+			if (this.state.volume < 1) {
+				const newVolume = this.state.volume + 0.1;
+				this.audioElement.volume = Math.min(newVolume, 1);
+				this.setState({ volume: newVolume });
+			} else this.setState( {volume: 1});
+		}
+
+		handleVolumeDownClick (e) {
+			if (this.state.volume > 0) {
+				const newVolume = this.state.volume - 0.1;
+				this.audioElement.volume = Math.max(0, newVolume);
+				this.setState({ volume: newVolume });
+			} else this.setState({ volume: 0 });
+		}
+
+		formatTime(time) {
+    return time ? `${Math.floor(time / 60)}:${Number(time % 60 / 100).toFixed(2).substr(2,3)}` : '-:--'
+  	}
 
   render() {
     return (
@@ -132,15 +155,21 @@ class Album extends Component {
 					</tbody>
         </table>
 				<PlayerBar
-           isPlaying={this.state.isPlaying}
-           currentSong={this.state.currentSong}
-					 currentTime={this.audioElement.currentTime}
-           duration={this.audioElement.duration}
-           handleSongClick={() => this.handleSongClick(this.state.currentSong)}
-					 handlePrevClick={() => this.handlePrevClick()}
-					 handleNextClick={() => this.handleNextClick()}
-					 handleTimeChange={(e) => this.handleTimeChange(e)}
-         />
+          isPlaying={this.state.isPlaying}
+          currentSong={this.state.currentSong}
+					currentTime={this.audioElement.currentTime}
+          duration={this.audioElement.duration}
+					volume={this.state.volume}
+          handleSongClick={() => this.handleSongClick(this.state.currentSong)}
+					handlePrevClick={() => this.handlePrevClick()}
+					handleNextClick={() => this.handleNextClick()}
+					handleTimeChange={(e) => this.handleTimeChange(e)}
+					handleVolumeChange={(e) => this.handleVolumeChange(e)}
+					formatTime={(e) => this.formatTime(e)}
+					artist={this.state.album.artist}
+					handleVolumeUpClick={(e) => this.handleVolumeUpClick(e)}
+					handleVolumeDownClick={(e) => this.handleVolumeDownClick(e)}
+        />
       </section>
     );
   }
