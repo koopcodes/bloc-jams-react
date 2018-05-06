@@ -27,7 +27,7 @@
   font-size: large;
 }
 
-table, th, td, tbody {
+table, tbody {
     border: 1px solid black;
 		border-collapse: collapse;
 		padding: 15px;
