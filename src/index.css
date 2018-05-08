@@ -1,5 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	font-family: 'Rock Salt', cursive;
+	color: azure;
+	background-color: black;
+}
+
+.App {
+	display: grid;
+	grid-template-columns: 200px auto;
+	grid-template-rows: 300px 400px 300px;
+	grid-template-areas:
+	"header header"
+	"sidebar main"
+	"footer footer";
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+
+header {
+  grid-area: header;
+	//border-style: double;
+	text-align: center;
+}
+
+main {
+  grid-area: main;
+	//border-style: double;
+}
+
+.sidebar {
+  grid-area: sidebar;
+	//border-style: double;
+}
+
+footer {
+  grid-area: footer;
+	//border-style: double;
+	//background-image: url("./img/footer.jpg");
+	background-repeat: no-repeat;
+}
+
+a:link {
+    color: azure;
+		text-decoration: none
+}
+
+a:visited {
+    color: azure;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blue;
 }

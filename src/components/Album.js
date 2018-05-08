@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import albumData from "./../data/albums";
 import PlayerBar from './PlayerBar';
+import "./Album.css";
 
 class Album extends Component {
   constructor(props) {
@@ -118,6 +119,7 @@ class Album extends Component {
 
   render() {
     return (
+			<footer>
       <section className="album">
         <section id="album-info">
           <img id="album-cover-art" src={ this.state.album.albumCover } alt={ this.state.album.title } />
@@ -170,7 +172,8 @@ class Album extends Component {
 					handleVolumeUpClick={(e) => this.handleVolumeUpClick(e)}
 					handleVolumeDownClick={(e) => this.handleVolumeDownClick(e)}
         />
-      </section>
+			</section>
+		</footer>
     );
   }
 }

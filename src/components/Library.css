@@ -1,0 +1,11 @@
+#album-cover-art {
+	height: 200px;
+	margin: 10px;
+
+}
+
+.library{
+	display: flex;
+	float: left;
+	//border-style: dashed;
+}
