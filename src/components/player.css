@@ -1,3 +1,25 @@
 .player-bar {
 	border-style: dashed;
+		text-align: center;
+}
+
+#current-song-displayed {
+
+}
+
+#volume-control {
+	display:flex;
+	align-content: center;
+	margin: 10px;
+}
+
+.ion-volume-low {
+	font-size: 40px;
+	margin: 5px;
+}
+
+.ion-volume-high {
+	font-size: 40px;
+	text-align: right;
+	margin: 5px;
 }

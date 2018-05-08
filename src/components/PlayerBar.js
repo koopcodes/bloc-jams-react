@@ -8,6 +8,7 @@ class PlayerBar extends Component {
 				<section id="current-song-displayed">
 					{this.props.currentSong.title} by {this.props.artist}
 				</section>
+          <div className="total-time">{ this.props.formatTime(this.props.currentTime) } / {this.props.formatTime(this.props.duration)}</div>
         <section id="time-control">
            <input
              type="range"
@@ -18,22 +19,22 @@ class PlayerBar extends Component {
              step="0.01"
 						 onChange={this.props.handleTimeChange}
            />
-           <div className="total-time">{ this.props.formatTime(this.props.currentTime) } / {this.props.formatTime(this.props.duration)}</div>
         </section>
 
 				<section id="buttons">
            <button id="previous" onClick={this.props.handlePrevClick}>
-             <span className="ion-skip-backward"></span>
+             <span className="ion-reply"></span>
            </button>
            <button id="play-pause" onClick={this.props.handleSongClick} >
-						<span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
+						<span className={this.props.isPlaying ? 'ion-android-hand' : 'ion-music-note'}></span>
            </button>
            <button id="next" onClick={this.props.handleNextClick} >
-             <span className="ion-skip-forward"></span>
+             <span className="ion-forward"></span>
            </button>
         </section>
 <p></p>
         <section id="volume-control">
+					<div className="ion-volume-low" onClick={ this.props.handleVolumeDownClick}></div>
             <input
 					 		type="range"
 							className="seek-bar"
@@ -43,8 +44,7 @@ class PlayerBar extends Component {
               step="0.01"
 							onChange={this.props.handleVolumeChange}
 						/>
-					<div className="icon ion-volume-low" onClick={ this.props.handleVolumeDownClick}>Vol -</div>
-				  <div className="icon ion-volume-high" onClick={ this.props.handleVolumeUpClick}>Vol +</div>
+				  <div className="ion-volume-high" onClick={ this.props.handleVolumeUpClick}></div>
         </section>
 			</section>
 		);

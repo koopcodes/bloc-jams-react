@@ -146,7 +146,7 @@ class Album extends Component {
 							<tr className={song} key ={index} onClick={() => this.handleSongClick(song)} >
 								<td className="song-actions">
                   <button>
-                  	<span className={((this.state.isPlaying) && (this.state.currentSong===song)) ? 'ion-pause' : 'ion-play'}></span>
+                  	<span className={((this.state.isPlaying) && (this.state.currentSong===song)) ? 'ion-android-hand' : 'ion-music-note'}></span>
 									  <span className="song-number"> { index+1 }</span>
                   </button>
                 </td>
