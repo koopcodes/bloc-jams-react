@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./player.css";
+import ".././index.css";
 
 class PlayerBar extends Component {
 	render () {
@@ -20,7 +21,6 @@ class PlayerBar extends Component {
 						 onChange={this.props.handleTimeChange}
            />
         </section>
-
 				<section id="buttons">
            <button id="previous" onClick={this.props.handlePrevClick}>
              <span className="ion-reply"></span>
@@ -32,7 +32,6 @@ class PlayerBar extends Component {
              <span className="ion-forward"></span>
            </button>
         </section>
-<p></p>
         <section id="volume-control">
 					<div className="ion-volume-low" onClick={ this.props.handleVolumeDownClick}></div>
             <input

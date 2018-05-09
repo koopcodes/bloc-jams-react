@@ -2,7 +2,7 @@ import React from "react";
 
 
 const Landing = () => (
-  <section className="sidebar">
+  <section className="main">
     <section className="selling-points">
       <div className="point">
         <h2 className="point-title">Choose your tunes</h2>

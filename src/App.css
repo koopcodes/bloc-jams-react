@@ -1,11 +1,18 @@
-nav {
-	//border-style: dotted;
-	padding: 0px;
+.sidebar {
+	border-style: dotted;
+	border-color: aqua;
+	padding: 10px;
 	margin: 2px;
+	text-align: center;
+	font-size: 20pt;
 }
 
 .logo {
-	margin: 0px;
-	height: 300px;
+	margin: 5px;
+	height: 150px;
 	float: left;
+}
+
+.slogan {
+	font-size: 48pt;
 }

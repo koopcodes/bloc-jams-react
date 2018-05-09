@@ -1,10 +1,11 @@
 .player-bar {
 	border-style: dashed;
 		text-align: center;
+		font-size: 8pt;
 }
 
 #current-song-displayed {
-
+	font-size: 8pt;
 }
 
 #volume-control {

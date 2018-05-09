@@ -7,6 +7,8 @@ import Landing from "./components/Landing";
 import Library from "./components/Library";
 import Album from "./components/Album";
 import About from "./components/About";
+import PlayerBar from "./components/PlayerBar";
+
 
 class App extends Component {
   render() {
@@ -14,14 +16,17 @@ class App extends Component {
       <div className="App">
         <header>
 					<img className="logo" src={logo} alt="Logo" />
-					<h1>Bloc Jams</h1>
-					<section className="slogan">TUNES TO C0DE BY</section>
+					<h1>Bloc Jams by Koop</h1>
+					<section className="slogan">Music to think by</section>
 				</header>
         <div className="sidebar">
-            <Link to="/" className="ion-ios-home" alt="Home"></Link><p></p>
-            <Link to="/library" className="ion-ios-recording" alt="Records you can play"></Link><p></p>
-						<Link to ="/about" className="ion-information-circled" alt="About this project"></Link><p></p>
-						<a href="https://github.com/koopdev/bloc-jams-react" alt="Link to Source Code" className="ion-code-working" target="_blank" rel="noopener noreferrer"> </a>
+				<nav>
+            <Link to="/">Home</Link><p></p>
+            <Link to="/library">Library</Link><p></p>
+						<Link to ="/about">About</Link><p></p>
+						<a href="https://github.com/koopdev/bloc-jams-react" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </nav>
+
 				</div>
         <main>
           <Route exact path="/" component={Landing} />
@@ -30,11 +35,7 @@ class App extends Component {
 					<Route path="/album/:slug" component={Album} />
         </main>
 				<footer>
-					<p>Koop Codes ©2018 </p>
-					<div className="ion-social-github"></div>
-					<div className="ion-social-twitter"></div>
-					<div className="ion-social-facebook"></div>
-					<div className="ion-social-linkedin"></div>
+					<p>Koop Codes ©2018</p>
 				</footer>
       </div>
     );

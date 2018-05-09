@@ -1,3 +1,18 @@
 .album {
-	display: flex;
+	display: grid;
+
+}
+
+.album-details {
+	margin:5px;
+}
+#album-title {
+	font-size: 12pt;
+}
+`.artist {
+	font-size: 10pt;
+}
+
+#release-info {
+	font-size: 8pt;
 }

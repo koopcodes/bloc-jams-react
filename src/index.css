@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 body {
-	font-family: 'Rock Salt', cursive;
+	font-family: 'Inconsolata', monospace;
 	color: azure;
 	background-color: black;
+	border-style: groove;
+	border-color: bisque;
 }
 
 .App {
 	display: grid;
-	grid-template-columns: 200px auto;
-	grid-template-rows: 300px 400px 300px;
+	grid-template-columns: 100px auto;
+	grid-template-rows: 200px auto auto;
 	grid-template-areas:
 	"header header"
 	"sidebar main"
@@ -20,25 +22,34 @@ body {
 
 header {
   grid-area: header;
-	//border-style: double;
-	text-align: center;
+	border-style: double;
+	text-align: left;
+	font-size: 20pt;
+	border-style: solid transparent;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.logo {
+	padding:5px;
 }
 
 main {
   grid-area: main;
-	//border-style: double;
+	border-style: double;
+	border-color: green;
 }
 
 .sidebar {
   grid-area: sidebar;
-	//border-style: double;
+	border-style: double;
+	border-color: blue;
 }
 
 footer {
   grid-area: footer;
-	//border-style: double;
-	//background-image: url("./img/footer.jpg");
-	background-repeat: no-repeat;
+	border-style: double;
+	border-color: blueviolet;
 }
 
 a:link {
