@@ -1,70 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+* {
+    box-sizing: border-box;
+}
 
 body {
-	font-family: 'Inconsolata', monospace;
-	color: azure;
-	background-color: black;
-	border-style: groove;
-	border-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Rock Salt", cursive;
+  color: azure;
+  background-color: black;
+  border-style: groove;
+  border-color: blue;
 }
 
 .App {
-	display: grid;
-	grid-template-columns: 100px auto;
-	grid-template-rows: 200px auto auto;
-	grid-template-areas:
-	"header header"
-	"sidebar main"
-	"footer footer";
-	grid-column-gap: 5px;
-	grid-row-gap: 5px;
+  border-style: groove;
+  border-color: rgb(255, 153, 0);
+}
+
+nav {
+  border-style: groove;
+  border-color: rgb(255, 0, 212);
 }
 
 header {
-  grid-area: header;
-	border-style: double;
-	text-align: left;
-	font-size: 20pt;
-	border-style: solid transparent;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.logo {
-	padding:5px;
+  border-style: groove;
+  border-color: rgb(0, 174, 255);
 }
 
 main {
-  grid-area: main;
-	border-style: double;
-	border-color: green;
-}
-
-.sidebar {
-  grid-area: sidebar;
-	border-style: double;
-	border-color: blue;
-}
-
-footer {
-  grid-area: footer;
-	border-style: double;
-	border-color: blueviolet;
+  border-style: groove;
+  border-color: rgb(30, 255, 0);
 }
 
 a:link {
-    color: azure;
-		text-decoration: none
+  color: azure;
+  text-decoration: none;
 }
 
 a:visited {
-    color: azure;
+  color: azure;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 a:active {
-    color: blue;
+  color: blue;
 }

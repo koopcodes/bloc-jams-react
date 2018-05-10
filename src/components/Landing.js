@@ -1,28 +1,27 @@
 import React from "react";
+import logo from ".././img/musicspheresfibon1.jpg";
+import "./Landing.css";
 
 
 const Landing = () => (
   <section className="main">
+	  <img className="logo" src={logo} alt="Logo" />
     <section className="selling-points">
-      <div className="point">
-        <h2 className="point-title">Choose your tunes</h2>
+        <p className="point-title">Music can help you focus</p>
         <p className="point-description">
-          The world is full of music; who knows what you want better than you?
-        </p>
-      </div>
-      <div className="point">
-        <h2 className="point-title">Unlimited, streaming, ad-free</h2>
+          It depends on the task and on the type of music, but <a href="https://www.popsci.com/music-and-concentration" alt="Music only helps you concentrate if you’re doing the right kind of task"
+            target="_blank"
+            rel="noopener noreferrer">
+            {"if the task requires creativity or some element of mental rotation then listening to music one likes "}
+          </a> can increase performance</p>
+        <p className="point-title">Get in the Flow, Stay in the Flow</p>
         <p className="point-description">
-          No arbitrary limits.No distractions.
+          These pieces are lyric-less to encourage maximum concentration. Pace and rythym, fast but not too fast, are important
         </p>
-      </div>
-      <div className="point">
-        <h2 className="point-title">Mobile enabled</h2>
+        <p className="point-title">But not for TOO long</p>
         <p className="point-description">
-          Listen to your music on the go. This streaming service is available on
-          all mobile platforms.
+          Once you are in the code Flow it is tempting to stay there.  But sitting is the new smoking, so aAfter playing through the 5 pieces twice (~35 minutes) get up and walk around for 5 minutes
         </p>
-      </div>
     </section>
   </section>
 );
