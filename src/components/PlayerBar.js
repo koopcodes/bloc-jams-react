@@ -23,13 +23,13 @@ class PlayerBar extends Component {
         </section>
 				<section id="buttons">
            <button id="previous" onClick={this.props.handlePrevClick}>
-             <span className="ion-reply"></span>
+             <span className="ion-skip-backward"></span>
            </button>
            <button id="play-pause" onClick={this.props.handleSongClick} >
-						<span className={this.props.isPlaying ? 'ion-android-hand' : 'ion-music-note'}></span>
+						<span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
            </button>
            <button id="next" onClick={this.props.handleNextClick} >
-             <span className="ion-forward"></span>
+             <span className="ion-skip-forward"></span>
            </button>
         </section>
         <section id="volume-control">
