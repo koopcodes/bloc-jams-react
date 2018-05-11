@@ -6,8 +6,8 @@ const Landing = () => (
   <section className="main">
     <img className="logo" src={logo} alt="Logo" />
     <section className="selling-points">
-      <p className="point-title">Music can help you focus</p>
-      <p className="point-description">
+      <div className="point-title">Music can help you focus</div>
+      <span className="point-description">
         It depends on the task and on the type of music, but{" "}
         <a
           href="https://www.popsci.com/music-and-concentration"
@@ -17,14 +17,14 @@ const Landing = () => (
           rel="noopener noreferrer">
           {"if the task requires creativity or some element of mental rotation "}
         </a>then listening to music one likes can increase performance
-      </p>
-      <p className="point-title">Get in the Flow, Stay in the Flow</p>
-      <p className="point-description">
+      </span>
+      <div className="point-title">Get in the Flow, Stay in the Flow</div>
+      <span className="point-description">
         These pieces are lyric-less to encourage maximum concentration. Pace and rythym, fast but not too fast, are
         important
-      </p>
-      <p className="point-title">But not for TOO long</p>
-      <p className="point-description">
+      </span>
+      <div className="point-title">But not for TOO long</div>
+      <span className="point-description">
         Once you are in the code Flow it is tempting to stay there. But{" "}
         <a
           href="https://www.cnn.com/2017/09/11/health/sitting-increases-risk-of-death-study/index.html"
@@ -34,7 +34,7 @@ const Landing = () => (
           rel="noopener noreferrer">
           {"sitting is the new smoking"}
         </a>, so after playing through the 5 pieces twice (~35 minutes) get up and walk around for 5 minutes
-      </p>
+      </span>
     </section>
   </section>
 );

@@ -1,18 +1,10 @@
 #album-cover-art {
-	height: auto;
-	width: auto;
 	margin: 5px;
-	border-style: dashed;
 }
 
 .library{
-
-}
-
-ul {
-	list-style-type: none;
-}
-
-li {
-	display: inline;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
 }
