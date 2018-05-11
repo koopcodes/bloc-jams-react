@@ -14,24 +14,25 @@ class App extends Component {
         <header>
           <span className="slogan">Koop's Bloc Jams: Tunes to code by</span>
         </header>
-        <nav>
-          <Link to="/" alt="Home">
-            Home{" "}
-          </Link>
-          <Link to="/library" alt="Records you can play">
-            {" "}
-            Albums{" "}
-          </Link>
-          <Link to="/about" alt="About this project">
-            {" "}
-            About
-          </Link>
-          <a
-            href="https://github.com/koopdev/bloc-jams-react"
-            alt="Link to Source Code"
-            target="_blank"
-            rel="noopener noreferrer">
-            {" Source Code "}</a>
+        <span className="subheader">
+          <span className="nav">
+            <Link to="/" alt="Home">
+              {"Home "}
+            </Link>
+            <Link to="/library" alt="Records you can play">
+              {" Albums "}
+            </Link>
+            <Link to="/about" alt="About this project">
+              {"  About "}
+            </Link>
+            <a
+              href="https://github.com/koopdev/bloc-jams-react"
+              alt="Link to Source Code"
+              target="_blank"
+              rel="noopener noreferrer">
+              {" Source Code "}
+            </a>
+          </span>
           <span className="social">
             <a
               href="https://github.com/koopdev/"
@@ -65,9 +66,9 @@ class App extends Component {
               rel="noopener noreferrer">
               {" "}
             </a>
+	          <span className="copyRight"> Koop Codes ©2018</span>
           </span>
-          <span className="copyRight"> Koop Codes ©2018</span>
-        </nav>
+        </span>
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />

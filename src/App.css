@@ -1,3 +1,63 @@
+.App {
+	display: grid;
+	grid-template-areas:
+		"header"
+		"subheader"
+		"main";
+}
+
+header {
+	grid-area: header;
+  width: 100%;
+  text-align: center;
+}
+
+.slogan {
+	font-size: 26pt;
+}
+
+.subheader {
+	grid-area: subheader;
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
 .copyRight {
-	font-size: 6pt;
+  font-size: 5pt;
+}
+
+.social {
+	float: right;
+	margin-right: 15%;
+	width: 20%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.social a:visited,
+.social a:link {
+  color: white;
+  text-decoration: none;
+}
+.nav {
+  display: inline-flex;
+  margin-left: 15%;
+	width: 40%;
+	justify-content: space-between;
+
+}
+.nav a:visited,
+.nav a:link {
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover,
+.nav a:active {
+  text-decoration: underline;
+}
+
+main {
+	grid-area: main;
+	display: grid;
 }
