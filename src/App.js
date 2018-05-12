@@ -14,8 +14,8 @@ class App extends Component {
         <header>
           <span className="slogan">Koop's Bloc Jams: Tunes to code by</span>
         </header>
-        <span className="subheader">
-          <span className="nav">
+        <span id="subheader">
+          <span id="nav">
             <Link to="/" alt="Home">
               {"Home "}
             </Link>
@@ -33,7 +33,7 @@ class App extends Component {
               {" Source Code "}
             </a>
           </span>
-          <span className="social">
+          <span id="social">
             <a
               href="https://github.com/koopdev/"
               className="ion-social-github"
@@ -66,7 +66,6 @@ class App extends Component {
               rel="noopener noreferrer">
               {" "}
             </a>
-	          <span className="copyRight"> Koop Codes ©2018</span>
           </span>
         </span>
         <main>

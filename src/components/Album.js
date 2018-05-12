@@ -124,23 +124,6 @@ class Album extends Component {
       : "-:--";
   }
 
-  handleMouseIn() {
-    this.setState({ hover: true });
-  }
-
-  handleMouseOut() {
-    this.setState({ hover: false });
-  }
-
-  handleHover(song) {
-    if (this.state.isPlaying && this.state.currentSong === song && this.state.hover) {
-      return "ion-pause";
-    }
-    if (!this.state.isPlaying && this.state.currentSong && this.state.hover) {
-      return "ion-play";
-    } else return song.index;
-  }
-
   render() {
     return (
       <section className="album">
