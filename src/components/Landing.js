@@ -19,10 +19,9 @@ const Landing = () => (
           {"if the task requires creativity or some element of mental rotation "}
         </a>then listening to music one likes can increase performance
       </p>
-      <div className="point-title">Get in the Flow, Stay in the Flow</div>
+      <div className="point-title">Get in the <a href="https://en.wikipedia.org/wiki/Flow_%28psychology%29" className="underlineThis" alt="Flow wiki article" target="_blank" rel="noopener noreferrer"> {"Flow"}</a> and stay there </div>
       <p className="point-description">
-        These pieces are lyric-less to encourage maximum concentration. Pace and rythym, fast but not too fast, are
-        important
+        These pieces are lyric-less to encourage maximum concentration. Pace and rythym, fast but not too fast, are important
       </p>
       <div className="point-title">But not for TOO long</div>
       <p className="point-description">

@@ -17,6 +17,13 @@ header {
 	text-shadow: 1px 1px silver;
 }
 
+@media (min-width: 600px) and (max-width: 899px) {
+  header {
+    padding: 0%;
+    font-size: 210%;
+  }
+}
+
 #subheader {
 	display: flow-root;
   grid-area: subheader;
@@ -27,11 +34,19 @@ header {
 
 #nav {
   display: inline-flex;
-  margin-left: 5px;
+  margin-left: 2%;
   width: 60%;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
-  font-size: 70%;
+  font-size: 75%;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  #nav {
+    padding: 0%;
+    font-size: 120%;
+		margin-left: 1%;
+  }
 }
 #nav a:visited,
 #nav a:link {
@@ -47,7 +62,7 @@ header {
 }
 
 #social {
-	margin-right: 5px;
+	margin-right: 3%;
   float: right;
   width: 20%;
   display: inline-flex;
@@ -55,6 +70,13 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
+@media (min-width: 600px) and (max-width: 899px) {
+  #social {
+    margin-right: 2.5%;
+		font-size: 120%;
+
+  }
+}
 #social a:visited,
 #social a:link {
   color: white;
@@ -76,6 +98,12 @@ main {
   margin-right: auto;
 }
 
+@media (min-width: 600px) and (max-width: 899px) {
+  main {
+    padding: 1%;
+    font-size: 160%;
+  }
+}
 
 main a:visited,
 main a:link {

@@ -4,6 +4,13 @@ img {
 	float: right;
 }
 
+@media (min-width: 600px) and (max-width: 899px) {
+  img {
+   padding: 1%;
+		width: 35%;
+  }
+}
+
 .point-title {
 font-weight: bold;
 text-shadow: 1px 1px silver;
