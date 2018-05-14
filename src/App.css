@@ -7,47 +7,145 @@
 }
 
 header {
-  font-size: 130%;
+  font-size: 100%;
   grid-area: header;
   width: 100%;
   text-align: center;
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
-	text-shadow: 1px 1px silver;
+  text-shadow: 1px 1px silver;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
   header {
-    padding: 0%;
-    font-size: 210%;
+    font-size: 200%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  header {
+    font-size: 280%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  header {
+    margin-left: 1%;
+    font-size: 350%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2199px) {
+  header {
+    margin-left: 1%;
+    font-size: 450%;
+  }
+}
+
+@media (min-width: 2200px) {
+  header {
+    margin-left: 1%;
+    font-size: 600%;
   }
 }
 
 #subheader {
-	display: flow-root;
+  display: flow-root;
   grid-area: subheader;
   width: 100%;
-  justify-content: space-between;
-  white-space: nowrap;
+  /* justify-content: space-between; */
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.1;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  #subheader {
+    padding: 0%;
+    font-size: 100%;
+    margin-left: 0%;
+    line-height: 1.6;
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #subheader {
+    padding: 0%;
+    font-size: 100%;
+    margin-left: 0%;
+    line-height: 0.5;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px){
+	#subheader {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 2199px){
+	#subheader {
+		width: 90%;
+		font-size: 300%;
+	}
+}
+
+@media (min-width: 2200px){
+	#subheader {
+		width: 80%;
+		font-size: 400%;
+	}
 }
 
 #nav {
-  display: inline-flex;
-  margin-left: 2%;
-  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+	padding:2%;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
-  font-size: 75%;
+  font-size: 65%;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
   #nav {
     padding: 0%;
-    font-size: 120%;
-		margin-left: 1%;
+    font-size: 100%;
+    margin-left: 8%;
+    width: 85%;
   }
 }
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #nav {
+    font-size: 155%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #nav {
+    font-size: 175%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2199px) {
+	#nav {
+		line-height: 0.0;
+	}
+}
+
+@media (min-width: 2200px) {
+	#nav {
+		line-height: 0.0;
+	}
+}
+
 #nav a:visited,
 #nav a:link {
   color: white;
@@ -58,14 +156,14 @@ header {
 #nav a:active {
   transition: all 0.2s ease-in-out;
   transform: scale(1.2);
-  text-shadow:1px 1px red;
+  text-shadow: 1px 1px red;
 }
 
-#social {
-	margin-right: 3%;
-  float: right;
-  width: 20%;
-  display: inline-flex;
+/* #social {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
 }
@@ -73,10 +171,23 @@ header {
 @media (min-width: 600px) and (max-width: 899px) {
   #social {
     margin-right: 2.5%;
-		font-size: 120%;
-
+    font-size: 135%;
+    width: 25%;
   }
 }
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  #social {
+    font-size: 160%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #social {
+    font-size: 195%;
+  }
+}
+
 #social a:visited,
 #social a:link {
   color: white;
@@ -85,14 +196,14 @@ header {
 
 #social a:hover,
 #social a:active {
-	text-shadow:1px 1px red;
+  text-shadow: 1px 1px red;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   transform: scale(1.5);
-}
+} */
 
 main {
-	padding: 10px;
+  padding: 5%;
   grid-area: main;
   margin-left: auto;
   margin-right: auto;
@@ -100,11 +211,31 @@ main {
 
 @media (min-width: 600px) and (max-width: 899px) {
   main {
-    padding: 1%;
-    font-size: 160%;
+		padding: 2%;
+		width: 90%;
+    font-size: 140%;
   }
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  main {
+    font-size: 280%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  main {
+    font-size: 280%;
+		width: 100%;
+  }
+}
+
+
+@media (min-width: 2200px) {
+  main {
+		width: 90%;
+  }
+}
 main a:visited,
 main a:link {
   color: lightslategray;
@@ -113,8 +244,8 @@ main a:link {
 
 main a:hover,
 main a:active {
-	text-shadow:1px 1px white;
-	text-decoration: underline;
+  text-shadow: 1px 1px white;
+  text-decoration: underline;
   transition: all 0.2s ease-in-out;
   transform: scale(1.3);
 }

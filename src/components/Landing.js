@@ -4,8 +4,8 @@ import "./Landing.css";
 import ".././index.css";
 
 const Landing = () => (
-  <section id="maintext">
-    <img src={logo} alt="Logo" />
+  <section id="main">
+    <img src={logo} id="logo" alt="Logo" />
     <section className="selling-points">
       <div className="point-title">Music can help you focus</div>
       <p className="point-description">

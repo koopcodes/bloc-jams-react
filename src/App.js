@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <span className="slogan">Koop's Bloc Jams: Tunes to code by</span>
+          <span id="slogan">Koop's Bloc Jams: Tunes to code by</span>
         </header>
         <span id="subheader">
           <span id="nav">
@@ -33,41 +33,7 @@ class App extends Component {
               {" Source Code "}
             </a>
           </span>
-          <span id="social">
-            <a
-              href="https://github.com/koopdev/"
-              className="ion-social-github"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
-            </a>
-            <a
-              href="https://twitter.com/koopdev/"
-              className="ion-social-twitter"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
-            </a>
-            <a
-              href="https://www.facebook.com/brent.kupras/"
-              className="ion-social-facebook"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/koopcodes/"
-              className="ion-social-linkedin"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
-            </a>
-          </span>
-        </span>
+                  </span>
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />
