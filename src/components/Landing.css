@@ -14,25 +14,32 @@
 .point-title {
   font-weight: bold;
   text-shadow: 1px 1px silver;
-  font-size: 75%;
+  font-size: 80%;
   float: top;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .point-title {
+    font-size: 130%;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
   .point-title {
-    font-size: 90%;
+    font-size: 200%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
   .point-title {
-    font-size: 120%;
+    font-size: 170%;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 2199px) {
   .point-title {
-    font-size: 340%;
+    font-size: 350%;
+		padding: 1%;
   }
 }
 
@@ -44,19 +51,19 @@
 
 p {
   line-height: 1.3;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
   p {
-    font-size: 60%;
+    font-size: 90%;
 		 line-height: 2;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
   p {
-    font-size: 90%;
+    font-size: 110%;
 		line-height: 1.3;
   }
 }
@@ -65,6 +72,7 @@ p {
   p {
     font-size: 190%;
 		line-height: 1.3;
+		padding: 1%;
   }
 }
 @media (min-width: 2200px) {

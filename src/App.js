@@ -33,7 +33,7 @@ class App extends Component {
               {" Source Code "}
             </a>
           </span>
-                  </span>
+        </span>
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />

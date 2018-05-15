@@ -159,49 +159,6 @@ header {
   text-shadow: 1px 1px red;
 }
 
-/* #social {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  justify-content: space-between;
-  transition: all 0.2s ease-in-out;
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
-  #social {
-    margin-right: 2.5%;
-    font-size: 135%;
-    width: 25%;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
-  #social {
-    font-size: 160%;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-  #social {
-    font-size: 195%;
-  }
-}
-
-#social a:visited,
-#social a:link {
-  color: white;
-  text-decoration: none;
-}
-
-#social a:hover,
-#social a:active {
-  text-shadow: 1px 1px red;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.5);
-} */
-
 main {
   padding: 5%;
   grid-area: main;
@@ -213,32 +170,37 @@ main {
   main {
 		padding: 2%;
 		width: 90%;
-    font-size: 140%;
+
   }
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
   main {
-    font-size: 280%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
   main {
-    font-size: 280%;
 		width: 100%;
   }
 }
 
+@media (min-width: 1600px) and (max-width: 2199px) {
+  main {
+    	width: 100%;
+		padding: 0%;
+		margin-top: 2%;
+  }
+}
 
 @media (min-width: 2200px) {
   main {
-		width: 90%;
+		width: 100%;
   }
 }
 main a:visited,
 main a:link {
-  color: lightslategray;
+  color: white;
   text-decoration: none;
 }
 
