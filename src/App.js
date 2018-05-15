@@ -12,62 +12,28 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <span className="slogan">Koop's Bloc Jams: Tunes to code by</span>
+          <span id="slogan">Koop's Bloc Jams: Tunes to code by</span>
         </header>
-        <nav>
-          <Link to="/" alt="Home">
-            Home{" "}
-          </Link>
-          <Link to="/library" alt="Records you can play">
-            {" "}
-            Albums{" "}
-          </Link>
-          <Link to="/about" alt="About this project">
-            {" "}
-            About
-          </Link>
-          <a
-            href="https://github.com/koopdev/bloc-jams-react"
-            alt="Link to Source Code"
-            target="_blank"
-            rel="noopener noreferrer">
-            {" Source Code "}</a>
-          <span className="social">
+        <span id="subheader">
+          <span id="nav">
+            <Link to="/" alt="Home">
+              {"Home "}
+            </Link>
+            <Link to="/library" alt="Records you can play">
+              {" Albums "}
+            </Link>
+            <Link to="/about" alt="About this project">
+              {"  About "}
+            </Link>
             <a
-              href="https://github.com/koopdev/"
-              className="ion-social-github"
+              href="https://github.com/koopdev/bloc-jams-react"
               alt="Link to Source Code"
               target="_blank"
               rel="noopener noreferrer">
-              {" "}
-            </a>
-            <a
-              href="https://twitter.com/koopdev/"
-              className="ion-social-twitter"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
-            </a>
-            <a
-              href="https://www.facebook.com/brent.kupras/"
-              className="ion-social-facebook"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/koopcodes/"
-              className="ion-social-linkedin"
-              alt="Link to Source Code"
-              target="_blank"
-              rel="noopener noreferrer">
-              {" "}
+              {" Source Code "}
             </a>
           </span>
-          <span className="copyRight"> Koop Codes ©2018</span>
-        </nav>
+        </span>
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />

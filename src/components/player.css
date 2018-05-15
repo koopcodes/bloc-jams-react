@@ -1,26 +1,30 @@
 .player-bar {
-	border-style: dashed;
-		text-align: center;
-		font-size: 8pt;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #current-song-displayed {
-	font-size: 8pt;
+  font-size: 100%;
 }
 
 #volume-control {
-	display:flex;
-	align-content: center;
-	margin: 10px;
+  justify-content: space-between;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
-.ion-volume-low {
-	font-size: 40px;
-	margin: 5px;
+.seek-bar {
+  width: 70%;
 }
 
-.ion-volume-high {
-	font-size: 40px;
-	text-align: right;
-	margin: 5px;
+.total-time {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 200%;
+}
+
+.ion-play {
+	font-size: 100%;
 }

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import "./player.css";
 import ".././index.css";
+import "./../App.css";
 
 class PlayerBar extends Component {
 	render () {
 		return (
-			<section className="player-bar">Currently playing:
+			<section className="player-bar">Currently playing :
 				<section id="current-song-displayed">
 					{this.props.currentSong.title} by {this.props.artist}
 				</section>
@@ -23,17 +24,17 @@ class PlayerBar extends Component {
         </section>
 				<section id="buttons">
            <button id="previous" onClick={this.props.handlePrevClick}>
-             <span className="ion-reply"></span>
+             <span className="ion-skip-backward"></span>
            </button>
            <button id="play-pause" onClick={this.props.handleSongClick} >
-						<span className={this.props.isPlaying ? 'ion-android-hand' : 'ion-music-note'}></span>
+						<span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
            </button>
            <button id="next" onClick={this.props.handleNextClick} >
-             <span className="ion-forward"></span>
+             <span className="ion-skip-forward"></span>
            </button>
         </section>
         <section id="volume-control">
-					<div className="ion-volume-low" onClick={ this.props.handleVolumeDownClick}></div>
+						<div className="ion-volume-low" onClick={ this.props.handleVolumeDownClick}></div>
             <input
 					 		type="range"
 							className="seek-bar"

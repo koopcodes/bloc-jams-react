@@ -1,50 +1,11 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
+  font-family: "Rock Salt", cursive;
+  color: white;
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Rock Salt", cursive;
-  color: azure;
-  background-color: black;
-  border-style: groove;
-  border-color: blue;
-}
-
-.App {
-  border-style: groove;
-  border-color: rgb(255, 153, 0);
-}
-
-nav {
-  border-style: groove;
-  border-color: rgb(255, 0, 212);
-}
-
-header {
-  border-style: groove;
-  border-color: rgb(0, 174, 255);
-}
-
-main {
-  border-style: groove;
-  border-color: rgb(30, 255, 0);
-}
-
-a:link {
-  color: azure;
-  text-decoration: none;
-}
-
-a:visited {
-  color: azure;
-}
-
-a:hover {
-  color: red;
-}
-
-a:active {
-  color: blue;
 }
