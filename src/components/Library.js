@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import albumData from "./../data/albums";
-import "./Library.css";
-import "./../index.css"
-import "./../App.css"
+
 
 class Library extends Component {
   constructor(props) {
@@ -16,14 +14,14 @@ class Library extends Component {
     return (
       <section className="library">
         {this.state.albums.map((album, index) => (
-          <span className="album-library"><Link to={`/album/${album.slug}`} key={index}>
-            <img id="album-cover-art" src={album.albumCover} alt={album.title} />
-            <div id="album-info"><span>{album.title }</span>
-            <span>{ album.artist }</span>
-            <span>{ album.songs.length} songs</span>
-						</div>
+          <Link to={`/album/${album.slug}`} key={index}>
+            <img id="custom-cover" src={album.albumCover} alt={album.title} />
+						<section className="song-info">
+             <div>{album.title}</div>
+             <div>{album.artist}</div>
+             <div>{album.songs.length} songs</div>
+             </section>
           </Link>
-					</span>
         ))}
       </section>
     );
