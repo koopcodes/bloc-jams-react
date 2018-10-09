@@ -3,7 +3,21 @@ import React, { Component } from "react";
 class About extends Component {
   render() {
     return (
-			<div className="About">This was a project for my apprenticeship at Bloc. Aside from using React and React Router, the requirements were:
+			<div className="About">
+			<h1>KoopCodes - KoopJams Music Player</h1>
+			<h2>Tunes to Code by</h2>
+			<hr></hr>
+			<h3>Proof of concept for a mobile-first frontend-only music player app.</h3>
+			<h5>Built with:</h5>
+			<ul>
+				<li>React & ReactDom 16.3.2</li>
+				<li>React Router 4.2.2</li>
+				<li>Create React App 1.5.2</li>
+				<li>Bootstrap 4</li>
+				<li>HTML, CSS, JSX, JQuery</li>
+				<li>Deployed via Firebase</li>
+			</ul>
+			<h5>Requirements:</h5>
 			<ul>
 				<li>When I visit the site, I see the name of the site, a slogan, and a brief list of features.</li>
 				<li>When I visit the site, I see a link to a Library page in the header</li>
